@@ -1,0 +1,125 @@
+/* Fonts */
+@font-face {
+  font-family: "CC Summer Fling";
+  src: url("fonts/CCSummerFling-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sweet Sans Pro";
+  src: url("fonts/SweetSansPro.woff2") format("woff2");
+}
+
+/* Global */
+body {
+  margin: 0;
+  font-family: "Sweet Sans Pro", sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  font-family: "CC Summer Fling", cursive;
+}
+
+/* Header */
+.header {
+  background: 
+    repeating-conic-gradient(#79becb 0% 25%, white 0% 50%) 
+    50% / 60px 60px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav {
+  margin-left: auto;
+}
+
+.header a {
+  color: #d72727;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.5s ease;
+}
+
+.header a:hover {
+  font-size: 21px;
+}
+
+/* Hero */
+.hero {
+  background: #640000;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.btn-primary {
+  background: #79becb;
+  color: black;
+  padding: 15px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.mission, .menu, .contact {
+  text-align: center;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* Reservations */
+.reservations {
+  background: #79becb;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+input, textarea, button {
+  padding: 12px;
+  font-size: 16px;
+}
+
+button {
+  background: #d72727;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #640000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
